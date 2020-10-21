@@ -18,7 +18,7 @@ const SocialProfile = (props) => {
 };
 
 const Footer = () => (
-  <div>
+  <div className="footer">
     <h2>Connect with me!</h2>
     <div>
       {SOCIAL_PROFILES.map((SOCIAL_PROFILE) => {

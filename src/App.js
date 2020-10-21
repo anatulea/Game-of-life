@@ -15,7 +15,8 @@ const App = () => {
   const [numRows, setNumRows] = useState(30);
   const [numCols, setNumCols] = useState(30);
   const [speed, setSpeed] = useState(1000);
-
+  const [playing, setPlaying] = useState(false);
+  const [generation, setGeneration] = useState(0);
   const [grid, setGrid] = useState(() => {
     return generateEmptyGrid(numRows, numCols);
   });
@@ -39,9 +40,6 @@ const App = () => {
   useEffect(() => {
     setGrid(generateEmptyGrid(numRows, numCols));
   }, [numRows, numCols]);
-
-  const [playing, setPlaying] = useState(false);
-  const [generation, setGeneration] = useState(0);
 
   const playingRef = useRef(playing);
   playingRef.current = playing;
@@ -130,6 +128,7 @@ const App = () => {
             )}
           </div>
           <div className="btn-container">
+            
             <button
               onClick={() => {
                 setPlaying(true);
@@ -137,9 +136,9 @@ const App = () => {
                 runSimulation();
               }}
             >
-              {" "}
               Start
             </button>
+
             <button
               onClick={() => {
                 setPlaying(false);
@@ -177,6 +176,7 @@ const App = () => {
             >
               Fast
             </button>
+
             <button
               onClick={() => {
                 playingRef.current = true;
@@ -192,10 +192,10 @@ const App = () => {
                 setGeneration(0);
               }}
             >
-              {" "}
               Clear
             </button>
-            <select
+
+            <select style={{padding:'3px'}}
               onChange={(event) => {
                 handleSelect(event.target.value);
               }}
@@ -205,6 +205,7 @@ const App = () => {
               <option value="3">40x30</option>
               <option value="4">50x40</option>
             </select>
+
           </div>
         </section>
         <Rules />
