@@ -84,7 +84,7 @@ const App = () => {
     });
 
     setTimeout(runSimulation, speed);
-  }, [numRows, numCols]);
+  }, [numRows, numCols, speed]);
 
   return (
     <div className="App">
