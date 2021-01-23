@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Conway's Game of Life or cellular automaton
+
 JavaScript | React | React Hooks | CSS | Algorithms
 
 - It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input.
