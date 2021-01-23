@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Conway's Game of Life or cellular automaton
+JavaScript | React | React Hooks | CSS | Algorithms
+
+- It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input.
+- Game of Life is played on an infinite two-dimensional rectangular grid of cells. Each cell can be either alive or dead. The status of each cell changes each turn of the game (also called a generation) depending on the statuses of that cell's 8 neighbors. Neighbors of a cell are cells that touch that cell, either horizontal, vertical, or diagonal from that cell.
+
 ## Available Scripts
 
 In the project directory, you can run:
